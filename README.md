@@ -1,23 +1,25 @@
-Вступление
-Что такое параллельные вычисления
-Процессы, потоки, корутины и горутины
-Как планировщик Go управляет горутинами
-Синхронизация горутин
-Буферизованные каналы
-Закрытие канала
-Итерирование по каналам
-Конструкция select
-Аксиомы каналов
-Конкурентный доступ и состояние гонки
-Примитивы синхронизации
-Mutex
-Mutex. Техника безопасности
-RWMutex
-Атомики (атомарные счётчики)
-sync.Map
-WaitGroup
-Достойны упоминания: sync.Pool и sync.Cond
-Финал
+# Конспект видео про Concurrency (Конкурентность)
+
+Структура материала:
+
+-   <a href="https://github.com/pavloging/go-course-concurrency#что-такое-параллельные-вычисления">Что такое параллельные вычисления</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#процессы-потоки-корутине-и-горутины">Процессы, потоки, корутины и горутины</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#как-планировщик-go-управляет-горутинами">Как планировщик Go управляет горутинами</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#синхронизация-горутинами">Синхронизация горутин</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#буферизованные-каналы">Буферизованные каналы</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#закрытие-канала">Закрытие канала</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#итерирование-по-каналам">Итерирование по каналам</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#конструкция-select">Конструкция select</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#аксиомы-каналов">Аксиомы каналов</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#конкурентный-доступ-и-состояние-гонки">Конкурентный доступ и состояние гонки</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#примитивы-синхронизации">Примитивы синхронизации</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#mutex">Mutex</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#mutex-техника-безопасности">Mutex. Техника безопасности</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#rwmutex">RWMutex</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#атомики-атомарные-счётчики">Атомики (атомарные счётчики)</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#syncmap">sync.Map</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#waitgroup">WaitGroup</a>
+-   <a href="https://github.com/pavloging/go-course-concurrency#достойны-упоминания-syncpool-и-synccond">Достойны упоминания: sync.Pool и sync.Cond</a>
 
 ## Что такое параллельные вычисления
 Параллелизм — это свойство систем, при котором несколько вычислений выполняются одновременно и могут взаимодействовать друг с другом.
